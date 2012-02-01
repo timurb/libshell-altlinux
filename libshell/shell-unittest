@@ -6,7 +6,7 @@
 if [ -z "${__included_shell_unittest-}" ]; then
 __included_shell_unittest=1
 
-. shell-error
+. $(dirname $0)/libshell/shell-error
 
 # Append tests condition to comment message if test failed.
 unittest_show_condition="${unittest_show_condition-}"

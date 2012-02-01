@@ -6,9 +6,9 @@
 if [ -z "${__included_shell_quote-}" ]; then
 __included_shell_quote=1
 
-. shell-version
-. shell-error
-. shell-string
+. $(dirname $0)/libshell/shell-version
+. $(dirname $0)/libshell/shell-error
+. $(dirname $0)/libshell/shell-string
 
 # Quote argument for sed basic regular expression and store result into variable.
 # Usage example:

@@ -6,8 +6,8 @@
 if [ -z "${__included_shell_signal-}" ]; then
 __included_shell_signal=1
 
-. shell-error
-. shell-quote
+. $(dirname $0)/libshell/shell-error
+. $(dirname $0)/libshell/shell-quote
 
 __shell_signal_handlers=
 # Set handler code whan any of the specified signals are received.

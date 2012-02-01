@@ -6,8 +6,8 @@
 if [ -z "${__included_shell_run-}" ]; then
 __included_shell_run=1
 
-. shell-args
-. shell-source
+. $(dirname $0)/libshell/shell-args
+. $(dirname $0)/libshell/shell-source
 
 # Execute command if file is executable.
 # Usage: run_if_executable /file arg1 arg2

@@ -8,8 +8,8 @@ __included_shell_ini_config=1
 
 shell_ini_config_comment='#'
 
-. shell-error
-. shell-var
+. $(dirname $0)/libshell/shell-error
+. $(dirname $0)/libshell/shell-var
 
 # Usage: ini_config_get file section var
 ini_config_get() {

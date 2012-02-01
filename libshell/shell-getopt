@@ -6,9 +6,9 @@
 if [ -z "${__included_shell_getopt-}" ]; then
 __included_shell_getopt=1
 
-. shell-error
-. shell-quote
-. shell-string
+. $(dirname $0)/libshell/shell-error
+. $(dirname $0)/libshell/shell-quote
+. $(dirname $0)/libshell/shell-string
 
 # Ignore unknown options.
 GETOPT_ALLOW_UNKNOWN=
@@ -236,7 +236,7 @@ getsubopt() {
 		return $?
 }
 
-. shell-version
+. $(dirname $0)/libshell/shell-version
 
 GETOPT_POSIXLY_CORRECT=
 
